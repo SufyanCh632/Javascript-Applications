@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    
+    </head>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #eee;
+            font-family:sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container{
+            background-color: rgb(192, 192, 192);
+            width: 500px;
+            height: 250px;
+            padding: 24px;
+            border-radius: 4px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #container > *{
+            flex-basis: 100%;
+        }
+        #heading{
+            text-align: center;
+            font-size: 32px;
+        }
+        #btn{
+            color: #eee;
+            background-color: rgb(10, 150, 210);
+            padding: 8px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #randomQuote{
+            font-size: italic;
+            letter-spacing: 0.05ch;
+            font-size: 14px;
+        }
+
+    </style>
+    <body>
+        <div id="container">
+            <h1 id="heading">Random Quote Generator</h1>
+            <button id="btn">Generate Random Quote</button>
+            <p id="randomQuote">"The Random Quote"</p>
+        </div>
+
+        <script src="Script.js"></script>
+
+    </body>
+</html>
